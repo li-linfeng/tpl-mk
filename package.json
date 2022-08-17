@@ -1,0 +1,37 @@
+{
+  "name": "tpl-mk",
+  "version": "1.0.0",
+  "description": "this is a cli fast to create .vue file and import in router auto",
+  "main": "index.js",
+  "dependencies": {
+    "chalk": "^2.4.1"
+  },
+  "bin": {
+    "tpl-mk": "index.js"
+  },
+  "devDependencies": {
+    "cz-conventional-changelog": "^3.3.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "postinstall": "echo install finished and run postinstall"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/li-linfeng/tpl-mk.git"
+  },
+  "keywords": [
+    "create",
+    ".vue",
+    "cli"
+  ],
+  "author": "li-linfeng",
+  "license": "ISC",
+  "homepage": "https://github.com/li-linfeng/tpl-mk#readme",
+  "bugs": "https://github.com/li-linfeng/issues",
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
+}

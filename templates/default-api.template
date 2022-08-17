@@ -1,0 +1,40 @@
+import request from '@/utils/request'
+
+export function get{$upper}List(query) {
+  return request({
+    url: '/api/{$lower}s',
+    method: 'get',
+    params: query
+  })
+}
+
+export function get{$upper}Detail(id) {
+  return request({
+    url: `/api/{$lower}s/${id}`,
+    method: 'get',
+  })
+}
+
+
+export function create{$upper}(data) {
+  return request({
+    url: '/api/{$lower}s',
+    method: 'post',
+    data
+  })
+}
+
+export function update{$upper}(id, data) {
+  return request({
+    url: `/api/{$lower}s/${id}`,
+    method: 'put',
+    data
+  })
+}
+
+export function delete{$upper}(id) {
+  return request({
+    url: `/api/{$lower}s/${id}`,
+    method: 'delete'
+  })
+}
