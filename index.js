@@ -33,6 +33,7 @@ function transferContent(command,filename){
       break;
     case  "-v":
       tplFilename = "default-view.template"
+      replace = upperFirstWord(filename)
       break;
     case  "-r":
       tplFilename = "default-api.template"
